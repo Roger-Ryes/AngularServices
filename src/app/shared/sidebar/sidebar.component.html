@@ -1,0 +1,15 @@
+<div class="p-3 bg-dark" id="sidebar">
+    <h3 class="text-light text-center">Hola</h3>
+    <hr class="text-white">
+    <ul class="list-group">
+      <a 
+      *ngFor="let busqueda of historial" 
+      href="#"
+      (click)="buscar(busqueda)" 
+      class="list-group-item"
+      >
+        {{ busqueda | titlecase }}
+      </a>
+      <!-- MetodoHard: {{ busqueda.charAt(0).toUpperCase() + busqueda.slice(1) }} -->
+    </ul>
+</div>
